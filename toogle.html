@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="it">
+<head>
+	<title>WOW with toggle</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/pure-min.css">
+	<!--[if lt IE 9]>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/libs/animate.css">
+	<script language="Javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+	<script language="Javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script language="Javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	<script language="Javascript" type="text/javascript" src="smoothPageScroll.js"></script>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+	<link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+
+<style>
+.custom-wrapper {
+    background-color: #fffbd5;
+    margin-bottom: 1em;
+    -webkit-font-smoothing: antialiased;
+    height: 4em;
+    line-height: 3em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.3s;
+    position: fixed;
+    width: 100%;
+    /*-webkit-box-shadow: inset 0 -0.3em 0.3em 0em #FFFFFF;*/
+    z-index: 3;
+    
+}
+
+.whitespace {
+	-webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.3s;
+}
+
+.custom-wrapper.open {
+    height: 14em;
+}
+
+.custom-menu-3 {
+    text-align: right;
+}
+
+.custom-toggle {
+    width: 34px;
+    height: 4em;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.custom-toggle .bar {
+    background-color: #97000c;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    margin-top: 0.75em;
+}
+
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+
+    .custom-menu-3 {
+        text-align: left;
+    }
+
+    .custom-toggle {
+        display: block;
+    }
+
+}
+
+#whitesplash {
+	height: 10em;
+	
+}
+</style>
+
+
+
+<div class="custom-wrapper pure-g" id="menu">
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-menu">
+            <a href="#" class="pure-menu-heading custom-brand" id="logo">vFind</a>
+            <a class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+        </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">1st par</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">1st par</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">1st par</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">1st par</a></li>
+                <li class="pure-menu-item"><a class="pure-menu-link lastpar" id="lastpar">2ns par</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="splash-container">
+    <div class="splash" >
+		<div class="whitespace"></div>
+			<h1 class="header-wemind scene1-firsth">We <span class="special">mind</span> about your data.</h1>
+			<h1 class="header-wefind scene1-secondh" data-wow-delay="1s">Your users <span class="special">find</span> them.</h1>
+    </div>
+    <div class="splash" >
+        <div class="whitespace"></div>
+            <div class="scene2-container">
+                <div class="scene2-image" >
+                    <img src="img/leftbrain.png" class="brain-left">
+                </div>
+                <h1 class="header-vfind1 scene2-par"><span class="special">vFind</span> è un motore di ricerca <span class="special">semantico</span></br>
+                    che cerca all'interno del tuo sito web</br>
+                    ragionando per <span class="special">concetti</span>.</h1>
+
+            </div>
+    </div>
+    <div class="splash" >
+        <div class="whitespace"></div>
+        <div class="scene3-container">
+            <div class="scene3-image righty">
+                <img src="img/leftbrain.png" class="brain-left flipped">
+            </div>
+            <h1 class="header-vfind2 scene3-par">I dati del tuo sito, come testi e <span class="special">video</span>,</br>
+                vengono elaborati da un'intelligenza artificiale</br>
+                in grado di cogliere i <span class="special">significati</span> oltre le parole.</h1>
+
+        </div>
+    </div>
+
+    <!--TODO: come sotto, eliminare il container e definire direttamente gli oggetti
+        TODO: float right con margin right-->
+    <!--div class="splash">
+        <div class="whitespace"></div>
+
+            <div class="scene30-image righty">
+                <img src="img/leftbrain.png" class="brain-left flipped">
+            </div>
+            <h1 class="header-vfind2 scene30-par">I dati del tuo sito, come testi e <span class="special">video</span>,</br>
+                vengono elaborati da un'intelligenza artificiale</br>
+                in grado di cogliere i <span class="special">significati</span> oltre le parole.</h1>
+
+
+    </div-->
+
+
+    <div class="splash">
+    <center class="buttoncenter">
+		<div class="whitespace"></div>
+		<p  class="wow bounceIn" data-wow-delay="5s"><a id="getStartedBtn" href="http://purecss.io" class="pure-button pure-button-primary">GET STARTED</a></p>
+	</center>
+	</div>
+
+    
+</div>
+
+<div class="main content-wrapper" id="mainc">
+	
+	<div class="notesdiv">
+	<div class="note">
+    <h1>Responsive Horizontal-to-Vertical Menu</h1>
+
+    <p>This example shows how you can build upon Pure Menu and Grid classes. At wide
+    window-widths we display a horizontal menu.
+    At smaller window-widths,
+    we switch to a vertical menu with a toggle control. Grids are used to
+    arrange the menus.
+    Code reproduced below:</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    </div>
+    </div>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p id="last">THIS LINE</p>
+    <span class="section--purple wow slideInLeft" data-wow-delay="1s" id="id">LEFT</span>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+    <p>LINE</p>
+</div>
+<script src="dist/wow.js"></script>
+<script>
+	
+	var mClosed = 64;
+	var mOpen = 102;
+	
+	//ANIMATIONS
+	wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+			
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+	
+	//MENU, COLLAPSE, OPEN/CLOSE
+	(function (window, document) {
+		var menu = document.getElementById('menu'), WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+
+		function closeMenu() {
+			if (menu.classList.contains('open')) {
+				toggleMenu();
+			}
+		}
+
+		document.getElementById('toggle').addEventListener('click', function (e) {
+			toggleMenu();
+		});
+
+		window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+
+	})(this, this.document);
+
+	//SCROLLTO
+	function dready() {
+
+		//setta l'altezza per l'offeset del contenuto
+		$('.whitespace').css('height', $('#menu').outerHeight());
+		
+		//smooth scrollTo: credits to Karl Swedberg @ http://www.learningjquery.com/2007/10/improved-animated-scrolling-script-for-same-page-links
+		function filterPath(string) {
+			return string
+				.replace(/^\//,'')
+				.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+				.replace(/\/$/,'');
+		}
+		var locationPath = filterPath(location.pathname);
+		var scrollElem = scrollableElement('html', 'body');
+
+		//FUNZIONA: NIENTE HREF
+		$('a#lastpar').each(function() {
+				var $target = $('#last'), target = '#last';
+				if (target) {
+					$(this).click(function(event) {
+						event.preventDefault();
+						var targetOffset;
+						var menu = document.getElementById('menu');
+						if (menu.classList.contains('open')) {
+							toggleMenu();
+							targetOffset = $target.offset().top - mOpen;
+						}
+						else {
+							targetOffset = $target.offset().top - mClosed;
+						}
+						$(scrollElem).animate({scrollTop: targetOffset}, 500, function() {
+						});
+					});
+				}
+		});
+
+		function scrollableElement(els) {
+			for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+				var el = arguments[i],
+				$scrollElement = $(el);
+				if ($scrollElement.scrollTop()> 0) return el;
+				else {
+					$scrollElement.scrollTop(1);
+					var isScrollable = $scrollElement.scrollTop() > 0;
+					$scrollElement.scrollTop(0);
+					if (isScrollable) return el;
+				}
+			}
+		}
+		return [];
+
+	}
+
+	$(document).ready(dready);
+
+</script>
+
+</body>
+
+</html>

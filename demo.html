@@ -1,0 +1,194 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>WOW</title>
+	<link rel="stylesheet" href="css/libs/animate.css">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	<script language="Javascript" type="text/javascript" src="smoothPageScroll.js"></script>
+	<!--style>
+		.wow:first-child {
+		  visibility: hidden;
+		}
+	</style-->
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+	<!--<![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+		<!--link rel="stylesheet" href="css/layouts/marketing.css"-->
+    <!--<![endif]-->
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+	<div class="custom-wrapper pure-g" id="menu">
+		<div class="header">
+			<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed custom-can-transform" id="myheader">
+				<a class="pure-menu-heading" href="">MiND & FiND</a>
+				<a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+				<ul class="pure-menu-list">
+					<li class="pure-menu-item"><a href="" class="pure-menu-link">Home</a></li>
+					<li class="pure-menu-item"><a href="" class="pure-menu-link">Home</a></li>
+					<li class="pure-menu-item"><a href="" class="pure-menu-link">Sign Up</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="contentbegin" id="mycontent">
+		<p>TOPLINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+		<p>LINE</p>
+	</div>
+	<!--div id="holder">
+	  <div id="container">
+	    <header>
+	      <h1>WOW.js</h1>
+	    </header>
+	    <div id="main">
+	      <div class="wow fadeInDown" style="background-color: #f1c40f;">
+	      
+	      <div>
+		  <p>PORCODDIO</p>
+	      <p>PORCODDIO</p>
+	      
+	      </div>
+	      
+	      <div>
+		  <p>PORCODDIO</p>
+	      <p>PORCODDIO</p>
+	      
+	      </div>
+	      
+	      </div>
+	      
+	      
+	      <span class="section--purple wow slideInLeft" data-wow-delay="1s" id="id">LEFT</span>
+	      <span class="section--purple wow slideInRight" data-wow-delay="1s">RIGHT</span>
+	      
+	      <section class="wow pulse" style="background-color: #e74c3c;" data-wow-iteration="infinite" data-wow-duration="1500ms"></section>
+	      <section class="section--purple wow slideInRight" data-wow-delay="2s"></section>
+	      <section class="section--blue wow bounceInLeft" data-wow-offset="300"></section>
+	      <section class="section--green wow slideInLeft" data-wow-duration="4s" id="last"></section>
+	      <button id="moar">LOAD MOAR!!</button>
+	    </div>
+  </div>
+  
+  </div>
+  <script src="dist/wow.js"></script-->
+
+	
+
+  <script>
+    /*wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+    
+    $(document).ready(function (){
+            $("#id").click(function (){
+                //$(this).animate(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#last").offset().top
+                    }, 1000);
+                //});
+            });
+        });*/
+    $(window).load(function (){
+		$('#mycontent').css('margin-top', $('#myheader').outerHeight());
+	});
+	
+	
+	
+	(function (window, document) {
+		var menu = document.getElementById('menu'),
+			WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+
+		function toggleHorizontal() {
+			[].forEach.call(
+				document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+				function(el){
+					el.classList.toggle('pure-menu-horizontal');
+				}
+			);
+		};
+
+		function toggleMenu() {
+			// set timeout so that the panel has a chance to roll up
+			// before the menu switches states
+			if (menu.classList.contains('open')) {
+				setTimeout(toggleHorizontal, 500);
+			}
+			else {
+				toggleHorizontal();
+			}
+			menu.classList.toggle('open');
+			document.getElementById('toggle').classList.toggle('x');
+		};
+
+		function closeMenu() {
+			if (menu.classList.contains('open')) {
+				toggleMenu();
+			}
+		}
+
+		document.getElementById('toggle').addEventListener('click', function (e) {
+			toggleMenu();
+		});
+
+		window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+		})(this, this.document);
+	
+  </script>
+</body>
+</html>

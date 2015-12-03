@@ -1,0 +1,54 @@
+Pulsante Try it in fondo fisso
+
+1)
+We MiND about your data.
+Your users FiND them.
+
+2)
+We elaborate your data into concepts to give your site a smart&powerful search engine.
+
+3)
+Your users will find what they are really looking for + results that are semantically related to their query.
+
+Dotiamo il tuo sito di un motore di ricerca interno intelligente ed efficace.
+Con MiND&FiND, la ricerca non avviene per confronti di stringhe di caratteri, ma per concetti, così come accade nella comunicazione fra esseri umani. 
+
+§ MiND
+Grazie ai nostri algoritmi di Natural Language Processing e Topic Modeling, siamo in grado di estrarre concetti dai tuoi articoli e di identificare collegamenti semantici fra loro o con il mondo esterno. Tutte le entità raccolte vengono valutate, pesate e analizzate, tenendo in considerazione la natura del dominio di ricerca con un alto livello di personalizzazione e specializzazione. I metadati generati vengono immagazzinati in MiND, il database semantico del tuo sito, in continuo aggiornamento alla ricerca di nuovi contenuti.
+
+INTELLIGENTE - AVANZATO (strumenti) - AUTOMATIZZATO
+
+§ FiND
+I dati di MiND possono essere usati in molti modi diversi: ad esempio, potresti voler conoscere quali sono i concetti o i nomi propri più presenti nel tuo sito, o cosa è andato di moda nell'ultima settimana. Il modo più efficace di utilizzarli, tuttavia, è quello di darli in pasto a FiND, il motore di ricerca interno al tuo sito che cerca per concetti.
+FiND è in grado di trovare non solo ciò che veramente l'utente sta cercando, superando le incomprensioni e la scomodità dello string matching, ma anche gli articoli semanticamente correlati alla sua ricerca. Ad esempio, un utente che cerca un rossetto potrebbe essere interessato anche ai lucidalabbra; un utente che cerca una ricetta con il Parmigiano Reggiano potrebbe voler visualizzare anche quelle che contengono il Grana Padano.
+
+EFFICACE (alg ordinamento) - PROATTIVO - SEMPLICE (da usare e installare)
+
+§ Il problema
+La maggior parte dei motori di ricerca interni ai siti web è inefficace: si limita a cercare le parole digitate, o parti delle stesse, nel contenuto o addirittura solo nel titolo degli articoli del sito, utilizzando sistemi di pesi elementari basati unicamente sulla frequenza. L'utente prova un senso di frustrazione nel non trovare ciò che stava cercando, perché non si ricorda il nome esatto dell'articolo, e finisce per rinunciare o utilizzare sistemi di ricerca esterni al sito, diminuendo il tempo di navigazione passato al suo interno e la fiducia nei suoi strumenti.
+
+§ La soluzione
+C'è una grande differenza tra lo spiegare cosa si cerca ad un commesso in carne ed ossa e l'interfacciarsi con una tastiera e una barra di ricerca. Ragionando per concetti, FiND diminuisce fortemente questa differenza. I suoi algoritmi di ordinamento evoluti sono in grado di individuare con efficacia e precisione gli articoli del tuo sito web che si avvicinano il più possibile alla ricerca effettuata, non a livello di caratteri digitati ma di concetti espressi, proprio come farebbe una persona.
+
+PIU' TEMPO TRASCORSO NEL SITO - MENO FONTI ESTERNE - PIU' SODDISFAZIONE E FIDUCIA
+
+Adotta la nostra soluzione:
+-> aggiungi i tuoi dati a MiND;
+-> acquista un'istanza di FiND costruita su misura per il tuo sito web.
+
+§ Non solo testi
+Grazie ad un processo di elaborazione speech-to-text all'avanguardia, siamo in grado di estrarre parole e concetti anche dai tuoi video - pensa ad una videolezione, o ad una conferenza -, dotandoli inoltre di una marca temporale. In questo modo, quando il tuo utente cercherà "Leopardi", potrà sapere che si parla di lui in un determinato video ai minuti X e Y.
+
+§ Demo
+Puoi già testare le potenzialità di FiND su siti che sono stati presi come dominio di ricerca di esempio.
+
+-> Prova FiND sui corsi e sui video dell'Università di Bologna: http://unibo.queryandfind.it
+
+§ Chi siamo
+
+§ Contattaci per informazioni su come adottare FiND
+-> in poco tempo, MiND acquisisce il contenuto dei tuoi articoli e lo elabora semanticamente;
+-> con una semplice riga di codice HTML puoi aggiungere la nostra barra di ricerca, o fare in modo che quella del tuo sito utilizzi FiND;
+-> MiND tiene d'occhio il tuo sito e si aggiorna continuamente, elaborando i nuovi contenuti;
+-> la tua istanza di FiND può essere completamente personalizzata, dalla barra, all'interfaccia dei risultati, a modifiche dell'algoritmo che tengano conto della natura del tuo sito: ad esempio, possiamo dare maggiore importanza ai risultati di ricerca che contengono un'offerta speciale.
+-> a seconda delle dimensioni del sito e della frequenza di aggiornamento richiesta, possiamo fornire abbonamenti personalizzati. CONTATTACI per sapere di più: info@queryandfind.it
